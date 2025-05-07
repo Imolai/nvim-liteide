@@ -1,6 +1,8 @@
-# Gabor's Neovim IDE (2025)
+# Neovim Lite IDE
 
-A minimalist yet full-featured Neovim IDE for **C++ / Python / Bash**, optimized for **Hungarian keyboard layouts** and designed to be faster and more customizable than VSCode.
+A minimalist yet full-featured Neovim IDE for **C++ / Python / Bash**,
+optimized for **Hungarian keyboard layouts** and
+designed to be faster and more customizable than VSCode.
 
 ## ⚙️ Features
 

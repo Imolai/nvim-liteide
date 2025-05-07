@@ -1,3 +1,7 @@
+-- Gabor's Neovim Lite IDE Setup for C++, Python, Bash
+-- git clone https://github.com/Imolai/nvim-liteide.git ~/.config/nvim
+-- config.keymaps
+
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 

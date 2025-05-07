@@ -1,3 +1,7 @@
+-- Gabor's Neovim Lite IDE Setup for C++, Python, Bash
+-- git clone https://github.com/Imolai/nvim-liteide.git ~/.config/nvim
+-- config.lazy
+
 require("mason").setup()
 require("mason-lspconfig").setup({
   ensure_installed = { "clangd", "pyright", "bashls" },

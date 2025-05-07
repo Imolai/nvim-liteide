@@ -1,3 +1,7 @@
+-- Gabor's Neovim Lite IDE Setup for C++, Python, Bash
+-- git clone https://github.com/Imolai/nvim-liteide.git ~/.config/nvim
+-- mytools.health
+
 local health = vim.health or require("health")
 
 local function check_tool(tool, install_cmd)
