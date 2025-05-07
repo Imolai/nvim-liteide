@@ -1,0 +1,19 @@
+# Swap
+*.swp
+*.swo
+
+# Backup
+*.bak
+
+# Session
+Session.vim
+
+# Temporary
+.netrwhist
+
+# Undo
+*.un~
+
+# Lazy plugin cache (optional)
+lazy-lock.json
+
