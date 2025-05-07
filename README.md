@@ -117,6 +117,8 @@ Or install all tools with:
 
 ## 📦 Setup
 
-1. Clone or copy the repo into `~/.config/nvim/`
+1. Clone or copy the repo into `~/.config/nvim/`  
+  `git clone https://github.com/Imolai/nvim-liteide.git`, or  
+  `gh repo clone Imolai/nvim-liteide`
 2. Launch `nvim` – `lazy.nvim` will install all required plugins automatically
 
