@@ -4,6 +4,19 @@ A minimalist yet full-featured Neovim IDE for **C++ / Python / Bash**,
 optimized for **Hungarian keyboard layouts** and
 designed to be faster and more customizable than VSCode.
 
+> Note: Hungarian support is not annoying, and it's easy to reset:
+
+```text
+-- English: ]c
+-- keymap("n", "]c", "<cmd>Gitsigns next_hunk<CR>", opts)
+keymap("n", "úc", "<cmd>Gitsigns next_hunk<CR>", opts)
+-- English: [c
+-- keymap("n", "[c", "<cmd>Gitsigns prev_hunk<CR>", opts)
+keymap("n", "őc", "<cmd>Gitsigns prev_hunk<CR>", opts)
+-- English: <C-\\><C-n>
+cmd([[tnoremap <Esc> <C-\><C-n>]])
+```
+
 ## ⚙️ Features
 
 | Area                    | Description                                                                       |
@@ -21,6 +34,9 @@ designed to be faster and more customizable than VSCode.
 | 🔁 Terminal Integration | `toggleterm.nvim` – in-editor floating terminal                                   |
 
 ## ⌨️ Keybindings (Hungarian keyboard friendly)
+
+*These mappings improve daily comfort for Hungarian layouts, where `[`, `]`,
+`\` are **AltGr** combinations.*
 
 ### 🔍 Search & Navigation (Telescope)
 
@@ -123,8 +139,6 @@ Or install all tools with:
   `git clone https://github.com/Imolai/nvim-liteide.git`, or  
   `gh repo clone Imolai/nvim-liteide`
 2. Launch `nvim` – `lazy.nvim` will install all required plugins automatically
-
-Nagyszerű ötlet, ez remek dokumentációs lépés a GitHub-oldaladra. Íme egy jól strukturált, rövid és világos **plugin lista** 1–2 szavas leírásokkal, amit beilleszthetsz a `README.md` végére (akár `## 📦 Plugins used` szakaszként):
 
 ## 📦 Plugins used
 

@@ -24,8 +24,10 @@ keymap("n", "<leader>gp", ":G push<CR>", opts)
 keymap("n", "<leader>gl", ":G pull<CR>", opts)
 -- Navigation
 -- English: ]c
+-- keymap("n", "]c", "<cmd>Gitsigns next_hunk<CR>", opts)
 keymap("n", "úc", "<cmd>Gitsigns next_hunk<CR>", opts)
 -- English: [c
+-- keymap("n", "[c", "<cmd>Gitsigns prev_hunk<CR>", opts)
 keymap("n", "őc", "<cmd>Gitsigns prev_hunk<CR>", opts)
 
 -- Actions
