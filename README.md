@@ -168,7 +168,7 @@ Or install all tools with:
 mv ~/.config/nvim{,.bak} ~/.local/share/nvim{,.bak} ~/.local/state/nvim{,.bak} ~/.cache/nvim{,.bak}
 ```
 
-Or clean them completely:
+  Or clean them completely:
 
 ```bash
 rm -rf ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim ~/.cache/nvim
@@ -192,7 +192,7 @@ nvim
 - All required plugins will be automatically downloaded and configured.
 - The `Mason` package manager will prepare your language servers and debuggers.
 
-After a few seconds, you're ready to go with a full-featured IDE for:
+  After a few seconds, you're ready to go with a full-featured IDE for:
 
 - **C++** via `clangd` + `clang-format` + `cpplint`
 - **Python** via `pyright` + `black` + `pylint`
