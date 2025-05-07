@@ -122,3 +122,33 @@ Or install all tools with:
   `gh repo clone Imolai/nvim-liteide`
 2. Launch `nvim` – `lazy.nvim` will install all required plugins automatically
 
+Nagyszerű ötlet, ez remek dokumentációs lépés a GitHub-oldaladra. Íme egy jól strukturált, rövid és világos **plugin lista** 1–2 szavas leírásokkal, amit beilleszthetsz a `README.md` végére (akár `## 📦 Plugins used` szakaszként):
+
+## 📦 Plugins used
+
+| Plugin                  | Purpose                           |
+| ----------------------- | --------------------------------- |
+| `lazy.nvim`             | Plugin manager                    |
+| `telescope.nvim`        | Fuzzy finder / search             |
+| `plenary.nvim`          | Dependency for Telescope          |
+| `nvim-treesitter`       | Syntax highlighting + folding     |
+| `nvim-lspconfig`        | LSP client configuration          |
+| `mason.nvim`            | LSP / DAP / Formatter installer   |
+| `mason-lspconfig.nvim`  | Connects Mason to LSP config      |
+| `mason-nvim-dap.nvim`   | Connects Mason to DAP             |
+| `nvim-cmp`              | Autocompletion engine             |
+| `cmp-nvim-lsp`          | LSP completions                   |
+| `cmp-buffer`            | Buffer word completions           |
+| `cmp-path`              | Path completions                  |
+| `cmp-cmdline`           | Command-line completions          |
+| `conform.nvim`          | Code formatting                   |
+| `nvim-lint`             | Linting engine                    |
+| `nvim-dap`              | Debugger (DAP core)               |
+| `nvim-dap-ui`           | DAP UI overlay                    |
+| `nvim-dap-virtual-text` | Inline variable display in debug  |
+| `nvim-nio`              | DAP-UI async backend              |
+| `vim-fugitive`          | Git CLI and commit UI integration |
+| `gitsigns.nvim`         | Git line markers                  |
+| `toggleterm.nvim`       | Floating terminal in-editor       |
+| `tokyonight.nvim`       | Colorscheme                       |
+
