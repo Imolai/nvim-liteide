@@ -17,3 +17,14 @@ Session.vim
 # Lazy plugin cache (optional)
 lazy-lock.json
 
+# Node.js general
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# package files (optional)
+package-lock.json
+package.json
+

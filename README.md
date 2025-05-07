@@ -1,7 +1,8 @@
+
 # Neovim Lite IDE
 
-A minimalist yet full-featured Neovim IDE for **C++ / Python / Bash**,
-optimized for **Hungarian keyboard layouts** and
+A minimalist yet full-featured [Neovim](https://neovim.io) IDE for **C++ /
+Python / Bash**, optimized for **Hungarian keyboard layouts** and
 designed to be faster and more customizable than VSCode.
 
 > Note: Hungarian support is not annoying, and it's easy to reset:
@@ -16,6 +17,26 @@ keymap("n", "őc", "<cmd>Gitsigns prev_hunk<CR>", opts)
 -- English: <C-\\><C-n>
 cmd([[tnoremap <Esc> <C-\><C-n>]])
 ```
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [⚙️ Features](#-features)
+- [⌨️ Keybindings (Hungarian keyboard friendly)](#-keybindings-hungarian-keyboard-friendly)
+  - [🔍 Search & Navigation (Telescope)](#-search--navigation-telescope)
+  - [💡 LSP Actions (Go to, Hover, Format)](#-lsp-actions-go-to-hover-format)
+  - [🧪 Diagnostics](#-diagnostics)
+  - [🐞 Debugging (nvim-dap)](#-debugging-nvim-dap)
+  - [🧠 Git – Fugitive & Gitsigns](#-git--fugitive--gitsigns)
+    - [➕ Gitsigns (inline Git changes)](#-gitsigns-inline-git-changes)
+    - [📄 `:Git` buffer mappings (normal mode)](#-git-buffer-mappings-normal-mode)
+  - [🔁 Terminal](#-terminal)
+- [🧪 Health Check](#-health-check)
+- [📥 Installation](#-installation)
+- [📦 Plugins used](#-plugins-used)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## ⚙️ Features
 
@@ -121,7 +142,13 @@ cmd([[tnoremap <Esc> <C-\><C-n>]])
 
 ## 🧪 Health Check
 
-Run this to check tool availability:
+Run health check generally:
+
+```vim
+:checkhealth
+```
+
+Or run this to check tool availability:
 
 ```vim
 :checkhealth mytools
@@ -133,12 +160,49 @@ Or install all tools with:
 :MasonInstallAll
 ```
 
-## 📦 Setup
+## 📥 Installation
 
-1. Clone or copy the repo into `~/.config/nvim/`  
-  `git clone https://github.com/Imolai/nvim-liteide.git`, or  
-  `gh repo clone Imolai/nvim-liteide`
-2. Launch `nvim` – `lazy.nvim` will install all required plugins automatically
+1. Save the previous Neovim configurations:
+
+```bash
+mv ~/.config/nvim{,.bak} ~/.local/share/nvim{,.bak} ~/.local/state/nvim{,.bak} ~/.cache/nvim{,.bak}
+```
+
+Or clean them completely:
+
+```bash
+rm -rf ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim ~/.cache/nvim
+```
+
+2. Clone the config into your Neovim directory:
+
+```bash
+git clone https://github.com/Imolai/nvim-liteide.git ~/.config/nvim
+```
+
+3. Then launch Neovim:
+
+```bash
+nvim
+```
+
+4. On the first run:
+
+- The [`lazy.nvim`](https://github.com/folke/lazy.nvim) plugin manager will install itself.
+- All required plugins will be automatically downloaded and configured.
+- The `Mason` package manager will prepare your language servers and debuggers.
+
+After a few seconds, you're ready to go with a full-featured IDE for:
+
+- **C++** via `clangd` + `clang-format` + `cpplint`
+- **Python** via `pyright` + `black` + `pylint`
+- **Bash** via `bashls` + `shfmt` + `shellcheck`
+
+5. Final cleanup (optional):
+
+```bash
+rm -rf ~/.config/nvim/.git
+```
 
 ## 📦 Plugins used
 
