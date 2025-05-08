@@ -1,4 +1,4 @@
--- Gabor's Neovim Lite IDE Setup for C++, Python, Bash
+-- Neovim Lite IDE
 -- git clone https://github.com/Imolai/nvim-liteide.git ~/.config/nvim
 -- config.options
 

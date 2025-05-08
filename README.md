@@ -5,6 +5,9 @@ A minimalist yet full-featured [Neovim](https://neovim.io) IDE for **C++ /
 Python / Bash**, optimized for **Hungarian keyboard layouts** and
 designed to be faster and more customizable than VSCode.
 
+This is an independent minimalist Neovim setup. Not affiliated with any other
+similarly named distributions.
+
 > Note: Hungarian support is not annoying, and it's easy to reset:
 
 ```text
