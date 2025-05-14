@@ -57,6 +57,7 @@ require("lazy").setup({
   { "echasnovski/mini.pairs", version = false },  -- Auto closing brackets, quotes
   { "echasnovski/mini.icons", version = false },  -- Icon definitions
   { "nvim-lualine/lualine.nvim" },                -- Modern statusline
+  { "ellisonleao/glow.nvim", config = true, cmd = "Glow" }, -- Markdown preview for glow
 })
 
 -- Load configuration modules

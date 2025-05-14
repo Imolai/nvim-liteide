@@ -31,6 +31,11 @@ M.check = function()
   check_tool("shfmt", "sudo apt install shfmt || sudo dnf install shfmt || brew install shfmt")
   check_tool("shellcheck", "sudo apt install shellcheck || sudo dnf install shellcheck || brew install shellcheck")
   check_tool("clang-format", "sudo apt install clang-format || sudo dnf install clang-tools-extra || brew install clang-format")
+  check_tool("glow", [[
+    curl -LO https://github.com/charmbracelet/glow/releases/download/v1.5.1/glow_Linux_x86_64.tar.gz &&
+    tar -xzf glow_Linux_x86_64.tar.gz &&
+    sudo mv glow /usr/local/bin/
+  ]])
 end
 return M
 

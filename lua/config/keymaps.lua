@@ -62,3 +62,6 @@ keymap("n", "<leader>d", vim.diagnostic.open_float, opts)
 keymap("n", "<leader>dl", function() vim.diagnostic.setqflist() end, opts)
 keymap("n", "<leader>ds", function() require("telescope.builtin").diagnostics() end, opts)
 
+-- Markdown Glow
+keymap("n", "<leader>md", ":Glow<CR>", opts)
+
