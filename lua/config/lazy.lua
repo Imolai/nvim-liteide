@@ -125,7 +125,7 @@ require("gitsigns").setup({
 })
 
 -- Enable mini.pairs for automatic closing pairs
-require("mini.pairs").setup()
+-- require("mini.pairs").setup()
 
 -- Setup lualine statusline with minimal separators
 require("lualine").setup({
