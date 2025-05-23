@@ -106,8 +106,32 @@ vim.api.nvim_create_autocmd({ "BufWritePost" }, {
 -- UI and utility setups
 require("dapui").setup()
 require("nvim-dap-virtual-text").setup()
-require("toggleterm").setup()
+require("toggleterm").setup({
+  -- Automatically set the working directory to the buffer's directory
+  dir = function()
+    local buf_path = vim.api.nvim_buf_get_name(0)
+    return vim.fn.fnamemodify(buf_path, ":p:h")
+  end,
+  direction = "horizontal", -- "float"|"horizontal"|"vertical"
+  close_on_exit = true,
+  shell = vim.o.shell,
+})
 require("telescope").setup({})
+
+-- neo-tree – file explorer pane (like VSCode)
+require("neo-tree").setup({
+  window = {
+    position = "left",
+    width = 30,
+  },
+  filesystem = {
+    filtered_items = {
+      visible = true, -- show dotfiles by default
+      hide_dotfiles = false,
+      hide_gitignored = true,
+    },
+  },
+})
 
 -- Gitsigns configuration for inline git change markers
 require("gitsigns").setup({

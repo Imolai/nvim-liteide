@@ -56,6 +56,8 @@ cmd([[tnoremap <Esc> <C-\><C-n>]])
 | 🔧 Health Check         | Custom `:checkhealth mytools` – verifies tools like `black`, `clang-format`, etc. |
 | 🧠 Git Support          | `vim-fugitive` (status, diff, commits) + `gitsigns.nvim` (inline indicators)      |
 | 🔁 Terminal Integration | `toggleterm.nvim` – in-editor floating terminal                                   |
+| 🗂 File Explorer        | `neo-tree.nvim` – modern sidebar folder tree with icons                           |
+| 🔘 Completion Toggle    | `<leader>ce` toggles autocompletion via `nvim-cmp`                                |
 
 ## ⌨️ Keybindings (Hungarian keyboard friendly)
 
@@ -64,12 +66,19 @@ cmd([[tnoremap <Esc> <C-\><C-n>]])
 
 ### 🔍 Search & Navigation (Telescope)
 
-| Keybind      | Description             |
-| ------------ | ----------------------- |
-| `<leader>ff` | Find file               |
-| `<leader>fg` | Live grep (text search) |
-| `<leader>fb` | List open buffers       |
-| `<leader>fh` | Search help topics      |
+| Keybind      | Description                 |
+| ------------ | --------------------------- |
+| `<leader>ff` | Find file                   |
+| `<leader>fg` | Live grep (text search)     |
+| `<leader>fb` | List open buffers           |
+| `<leader>fh` | Search help topics          |
+| `<leader>e`  | Toggle file tree (Neo-tree) |
+
+### ⚙️ Editor Enhancements
+
+| Keybind      | Description                          |
+| ------------ | ------------------------------------ |
+| `<leader>ce` | Toggle autocompletion on/off         |
 
 ### 💡 LSP Actions (Go to, Hover, Format)
 
@@ -209,29 +218,32 @@ rm -rf ~/.config/nvim/.git
 
 ## 📦 Plugins used
 
-| Plugin                  | Purpose                           |
-| ----------------------- | --------------------------------- |
-| `lazy.nvim`             | Plugin manager                    |
-| `telescope.nvim`        | Fuzzy finder / search             |
-| `plenary.nvim`          | Dependency for Telescope          |
-| `nvim-treesitter`       | Syntax highlighting + folding     |
-| `nvim-lspconfig`        | LSP client configuration          |
-| `mason.nvim`            | LSP / DAP / Formatter installer   |
-| `mason-lspconfig.nvim`  | Connects Mason to LSP config      |
-| `mason-nvim-dap.nvim`   | Connects Mason to DAP             |
-| `nvim-cmp`              | Autocompletion engine             |
-| `cmp-nvim-lsp`          | LSP completions                   |
-| `cmp-buffer`            | Buffer word completions           |
-| `cmp-path`              | Path completions                  |
-| `cmp-cmdline`           | Command-line completions          |
-| `conform.nvim`          | Code formatting                   |
-| `nvim-lint`             | Linting engine                    |
-| `nvim-dap`              | Debugger (DAP core)               |
-| `nvim-dap-ui`           | DAP UI overlay                    |
-| `nvim-dap-virtual-text` | Inline variable display in debug  |
-| `nvim-nio`              | DAP-UI async backend              |
-| `vim-fugitive`          | Git CLI and commit UI integration |
-| `gitsigns.nvim`         | Git line markers                  |
-| `toggleterm.nvim`       | Floating terminal in-editor       |
-| `tokyonight.nvim`       | Colorscheme                       |
+| Plugin                  | Purpose                            |
+| ----------------------- | ---------------------------------- |
+| `lazy.nvim`             | Plugin manager                     |
+| `telescope.nvim`        | Fuzzy finder / search              |
+| `plenary.nvim`          | Dependency for Telescope           |
+| `nvim-treesitter`       | Syntax highlighting + folding      |
+| `nvim-lspconfig`        | LSP client configuration           |
+| `mason.nvim`            | LSP / DAP / Formatter installer    |
+| `mason-lspconfig.nvim`  | Connects Mason to LSP config       |
+| `mason-nvim-dap.nvim`   | Connects Mason to DAP              |
+| `nvim-cmp`              | Autocompletion engine              |
+| `cmp-nvim-lsp`          | LSP completions                    |
+| `cmp-buffer`            | Buffer word completions            |
+| `cmp-path`              | Path completions                   |
+| `cmp-cmdline`           | Command-line completions           |
+| `conform.nvim`          | Code formatting                    |
+| `nvim-lint`             | Linting engine                     |
+| `nvim-dap`              | Debugger (DAP core)                |
+| `nvim-dap-ui`           | DAP UI overlay                     |
+| `nvim-dap-virtual-text` | Inline variable display in debug   |
+| `nvim-nio`              | DAP-UI async backend               |
+| `vim-fugitive`          | Git CLI and commit UI integration  |
+| `gitsigns.nvim`         | Git line markers                   |
+| `toggleterm.nvim`       | Floating terminal in-editor        |
+| `tokyonight.nvim`       | Colorscheme                        |
+| `neo-tree.nvim`         | Folder tree explorer               |
+| `nui.nvim`              | UI framework (Neo-tree dependency) |
+| `nvim-web-devicons`     | File icons                         |
 

@@ -40,6 +40,8 @@ keymap("n", "<leader>hd", "<cmd>Gitsigns diffthis<CR>")
 
 -- Terminal
 keymap("n", "<leader>tt", "<cmd>ToggleTerm<CR>", opts)
+-- File Explorer (Neo-tree)
+keymap("n", "<leader>e", "<cmd>Neotree toggle<CR>", opts)
 -- English: <C-\\><C-n>
 cmd([[tnoremap <Esc> <C-\><C-n>]])
 
@@ -51,6 +53,14 @@ keymap("n", "<F12>", "<cmd>lua require'dap'.step_out()<CR>", opts)
 keymap("n", "<leader>b", "<cmd>lua require'dap'.toggle_breakpoint()<CR>", opts)
 keymap("n", "<leader>dr", "<cmd>lua require'dap'.repl.toggle()<CR>", opts)
 keymap("n", "<leader>du", "<cmd>lua require'dapui'.toggle()<CR>", opts)
+
+-- Completion on/off
+vim.keymap.set("n", "<leader>ce", function()
+  local cmp = require("cmp")
+  local enabled = cmp.get_config().enabled
+  cmp.setup.buffer({ enabled = not enabled })
+  print("Completion " .. (not enabled and "enabled" or "disabled"))
+end, { noremap = true, silent = true })
 
 -- Formatting
 keymap("n", "<leader>f", function()

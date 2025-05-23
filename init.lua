@@ -51,6 +51,17 @@ require("lazy").setup({
   { "lewis6991/gitsigns.nvim" },                  -- Git signs in the gutter
   -- Terminal
   { "akinsho/toggleterm.nvim", version = "*" },   -- Integrated floating terminal
+  -- Folder tree plugin and icons
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v3.x",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-tree/nvim-web-devicons", -- optional, for file icons
+      "MunifTanjim/nui.nvim",
+    },
+  },
+  { "nvim-tree/nvim-web-devicons", lazy = true }, -- safe to include even if used elsewhere
   -- Theme
   { "folke/tokyonight.nvim", lazy = false, priority = 1000 },  -- A clean, dark Neovim theme
   -- UX Enhancements
