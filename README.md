@@ -46,7 +46,7 @@ cmd([[tnoremap <Esc> <C-\><C-n>]])
 | Area                    | Description                                                                       |
 | ----------------------- | --------------------------------------------------------------------------------- |
 | 🔌 Plugin Manager       | [`lazy.nvim`](https://github.com/folke/lazy.nvim) – fast, async, stable           |
-| 💡 LSP Support          | Automatic setup via Mason: `clangd`, `pyright`, `bashls`                          |
+| 💡 Package Manager      | [Mason](https://github.com/mason-org/mason.nvim) - LSP, DAP, linter, formatter    |
 | 🧪 Linter               | `nvim-lint`: `cpplint`, `pylint`, `shellcheck`                                    |
 | 🧼 Formatter            | `conform.nvim`: `clang-format`, `black`, `shfmt`                                  |
 | 🪝 Completion Engine    | `nvim-cmp` + `cmp-nvim-lsp` + `LuaSnip`                                           |
@@ -57,7 +57,6 @@ cmd([[tnoremap <Esc> <C-\><C-n>]])
 | 🧠 Git Support          | `vim-fugitive` (status, diff, commits) + `gitsigns.nvim` (inline indicators)      |
 | 🔁 Terminal Integration | `toggleterm.nvim` – in-editor floating terminal                                   |
 | 🗂 File Explorer        | `neo-tree.nvim` – modern sidebar folder tree with icons                           |
-| 🔘 Completion Toggle    | `<leader>ce` toggles autocompletion via `nvim-cmp`                                |
 
 ## ⌨️ Keybindings (Hungarian keyboard friendly)
 
@@ -173,6 +172,27 @@ Or install all tools with:
 ```
 
 ## 📥 Installation
+
+0. Install Neovim
+
+Download and install the latest Neovim binary:
+
+Official release:
+- https://github.com/neovim/neovim/releases  
+  https://github.com/neovim/neovim/releases/download/v0.11.0/nvim-linux-x86_64.tar.gz
+- (unsupported) builds for older glibc: https://github.com/neovim/neovim-releases/releases  
+  https://github.com/neovim/neovim-releases/releases/download/v0.11.1/nvim-linux-x86_64.tar.gz
+
+```bash
+cd
+curl -LO https://github.com/neovim/neovim/releases/download/v0.11.1/nvim-linux-x86_64.tar.gz
+tar xvzf nvim-linux-x86_64.tar.gz
+mv nvim-linux-x86_64 neovim
+
+# Add Neovim to your PATH
+echo -e '\nexport PATH="$PATH:$HOME/neovim/bin"\n' >> ~/.bashrc
+. ~/.bashrc
+```
 
 1. Save the previous Neovim configurations:
 
