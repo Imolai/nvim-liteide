@@ -179,13 +179,13 @@ Download and install the latest Neovim binary:
 
 Official release:
 - https://github.com/neovim/neovim/releases  
-  https://github.com/neovim/neovim/releases/download/v0.11.0/nvim-linux-x86_64.tar.gz
+  https://github.com/neovim/neovim/releases/download/v0.11.4/nvim-linux-x86_64.tar.gz
 - (unsupported) builds for older glibc: https://github.com/neovim/neovim-releases/releases  
-  https://github.com/neovim/neovim-releases/releases/download/v0.11.1/nvim-linux-x86_64.tar.gz
+  https://github.com/neovim/neovim-releases/releases/download/v0.11.4/nvim-linux-x86_64.tar.gz
 
 ```bash
 cd
-curl -LO https://github.com/neovim/neovim/releases/download/v0.11.1/nvim-linux-x86_64.tar.gz
+curl -LO https://github.com/neovim/neovim/releases/download/v0.11.4/nvim-linux-x86_64.tar.gz
 tar xvzf nvim-linux-x86_64.tar.gz
 mv nvim-linux-x86_64 neovim
 
@@ -221,6 +221,7 @@ nvim
 4. On the first run:
 
 - The [`lazy.nvim`](https://github.com/folke/lazy.nvim) plugin manager will install itself.
+  - The manual installation way is: `git clone https://github.com/folke/lazy.nvim.git ~/.local/share/nvim/lazy/lazy.nvim`.
 - All required plugins will be automatically downloaded and configured.
 - The `Mason` package manager will prepare your language servers and debuggers.
 
